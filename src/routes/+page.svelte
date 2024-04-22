@@ -2,7 +2,14 @@
     import Heading from "../lib/components/Heading.svelte";
 
 </script>
+<main>
+
 <Heading />
+
+     <!-- <img src="Belloon.1.jpg" />      -->
+
+
+
 
 <div class="container">
      <h2>Registration Form</h2>
@@ -10,14 +17,6 @@
          <div class="form-group">
              <label for="username">Username:</label>
              <input type="text" id="username" name="username" required>
-         </div>
-         <div class="form-group">
-             <label for="First Name">First Name:</label>
-             <input type="text" id="First Name" name="First Name" required>
-         </div>
-         <div class="form-group">
-             <label for="Sur Name">Sur Name:</label>
-             <input type="email" id="Sur Name" name="Sur Name" required>
          </div>
          <div class="form-group">
              <label for="email">Email:</label>
@@ -31,12 +30,10 @@
              <label for="confirm_password">Confirm Password:</label>
              <input type="password" id="confirm_password" name="confirm_password" required>
          </div>
-         <div>
-             <div class="form-group">
-        <label for="Address">Address:</label>
-        <input type="Address" id="Address" name="Address" required>
-        </div>
-         
+         <div class="form-group">
+             <label for="full_name">Full Name:</label>
+             <input type="text" id="full_name" name="full_name" required>
+         </div>
          <div class="form-group">
              <label for="gender">Gender:</label>
              <select id="gender" name="gender" required>
@@ -56,41 +53,52 @@
      </form>
  </div>
 
+</main>
+
  <style>
-             .body {
-            font-family: Arial, sans-serif;
-         }
-        .container {
-            width: 50%;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            font-weight: bold;
-        }
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        .form-group button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .form-group button:hover {
-            background-color: #0056b3;
-        }
+
+main {
+          background-color: rgb(220, 201, 176);
+          background-image: url("image1.jpg");
+          background-size: cover; 
+          height: 1000px;
+          padding-top: 30px;
+          padding-bottom: 10px;
+          border-radius: 5px;
+}
+    
+     .container {
+         width: 50%;
+         margin: auto;
+         padding: 20px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+     }
+     .form-group {
+         margin-bottom: 20px;
+     }
+     .form-group label {
+         display: block;
+         font-weight: bold;
+     }
+     .form-group input,
+     .form-group select {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+         box-sizing: border-box;
+     }
+     .form-group button {
+         padding: 10px 20px;
+         background-color: #007bff;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+     }
+     .form-group button:hover {
+         background-color: #0056b3;
+     } 
+
  </style>
